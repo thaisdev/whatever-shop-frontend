@@ -1,0 +1,11 @@
+.product-card {
+    position: relative;
+    
+    &__card {
+        max-width: 100%;
+    }
+
+    &__card-media {
+        height: 140px;
+    }
+}
