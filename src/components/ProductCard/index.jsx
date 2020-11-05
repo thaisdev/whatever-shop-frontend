@@ -9,12 +9,23 @@ import {
     Typography
 } from '@material-ui/core';
 import './productCard.scss';
+import { formatCurrency } from '../../utils/formatHelper';
 
 const ProductCard = ({ product }) => {
+    const handleAddToCart = e => {
+        console.log(e);
+        console.log('add item to cart');
+    }
+
+    const handleSeeProduct = e => {
+        console.log(e);
+        console.log('see product');
+    }
+
     return (
         <div className="product-card">
             <Card className="product-card__card">
-                <CardActionArea>
+                <CardActionArea onClick={handleSeeProduct}>
                     <CardMedia
                         className="product-card__card-media"
                         image={product.image}
@@ -25,17 +36,13 @@ const ProductCard = ({ product }) => {
                             {product.name}
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
+                            {formatCurrency(product.price)}
                         </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-                    </Button>
-                    <Button size="small" color="primary">
-                        Learn More
+                    <Button size="small" color="primary" onClick={handleAddToCart}>
+                        Adicionar ao carrinho
                     </Button>
                 </CardActions>
             </Card>

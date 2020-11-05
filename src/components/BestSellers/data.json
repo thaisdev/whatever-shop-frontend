@@ -1,50 +1,62 @@
 [
     {
         "name": "Produto 1",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 2",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 3",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 4",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 1",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 2",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 3",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 4",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 1",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 2",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 3",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     },
     {
         "name": "Produto 4",
-        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg"
+        "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
+        "price": 1000
     }
 ]
