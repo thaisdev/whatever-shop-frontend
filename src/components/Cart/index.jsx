@@ -22,6 +22,11 @@ const Cart = () => {
 
     return (
         <Grid container spacing={1} className="cart">
+            <Grid container item xs={12}>
+                <Typography variant="h4">
+                    Meu carrinho
+                </Typography>
+            </Grid>
             <Grid container item xs={8}>
                 {
                     cart.map((item, index) => (
@@ -31,12 +36,15 @@ const Cart = () => {
                                 <img src={item.image} alt={item.name} className="cart__image" />
                             </Grid>
                             <Grid container item xs={6}>
-                                <Typography>
+                                <Typography variant="span" className="cart__product-name">
                                     {item.name}
                                 </Typography>
+                                <Typography className="cart__product-description">
+                                    {item.description}
+                                </Typography>
                             </Grid>
-                            <Grid container item xs={3}>
-                                <Typography>
+                            <Grid container item xs={3} className="cart__product-price">
+                                <Typography variant="span">
                                     {formatCurrency(item.price)}
                                 </Typography>
                             </Grid>
@@ -44,17 +52,24 @@ const Cart = () => {
                     ))
                 }
             </Grid>
-            <Grid container item xs={4}>
-                <Card className="product-card">
-                    <CardActionArea>
-                        <CardContent>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                {formatCurrency(total)}
+            <Grid container item xs={4} className="cart__resume">
+                <Card className="cart__resume-card">
+                    <CardContent>
+                        <Typography align="center" className="cart__resume-title">
+                            Resumo do pedido
+                        </Typography> 
+                        <div className="cart__resume-info">
+                            <Typography variant="body2" align="center" color="textSecondary" component="p" className="cart__resume-price">
+                                {`${formatCurrency(total)} à vista no Boleto`}
                             </Typography>
-                        </CardContent>
-                    </CardActionArea>
+                            <Typography variant="body2" align="center" color="textSecondary" component="p" className="cart__resume-delivery">
+                                Entrega prevista para 23/11/2020
+                            </Typography>
+                        </div>
+                    </CardContent>
                     <CardActions>
-                        <Button size="small" color="primary" onClick={handleCloseOrder}>
+                        <Button color="primary" className="cart__resume-button"
+                            onClick={handleCloseOrder}>
                             Fechar pedido
                         </Button>
                     </CardActions>
