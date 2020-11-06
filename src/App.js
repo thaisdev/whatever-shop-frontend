@@ -14,7 +14,7 @@ const App = () => {
     <Router history={hist}>
       <Switch>
         <Route path="/home" component={HomePage} />
-        <Route path="/product" component={ProductPage} />
+        <Route path="/product/:id" component={ProductPage} />
         <Route path="/cart" component={CartPage} />
         <Redirect from="/" to="/home" />
       </Switch>

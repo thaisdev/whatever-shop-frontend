@@ -10,6 +10,7 @@ import {
 } from '@material-ui/core';
 import './productCard.scss';
 import { formatCurrency } from '../../utils/formatHelper';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
     const handleAddToCart = e => {
@@ -17,15 +18,10 @@ const ProductCard = ({ product }) => {
         console.log('add item to cart');
     }
 
-    const handleSeeProduct = e => {
-        console.log(e);
-        console.log('see product');
-    }
-
     return (
-        <div className="product-card">
-            <Card className="product-card__card">
-                <CardActionArea onClick={handleSeeProduct}>
+        <Card className="product-card">
+            <Link to={`product/${product.id}`} className="product-card__link">
+                <CardActionArea>
                     <CardMedia
                         className="product-card__card-media"
                         image={product.image}
@@ -40,13 +36,13 @@ const ProductCard = ({ product }) => {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary" onClick={handleAddToCart}>
-                        Adicionar ao carrinho
-                    </Button>
-                </CardActions>
-            </Card>
-        </div>
+            </Link>
+            <CardActions>
+                <Button size="small" color="primary" onClick={handleAddToCart}>
+                    Adicionar ao carrinho
+                </Button>
+            </CardActions>
+        </Card>
     )
 }
 

@@ -1,0 +1,31 @@
+.product {
+    &__title {
+        padding: 12px 0;
+        color: #3e3e3e;
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__info {
+        padding: 0 24px;
+    }
+
+    &__price {
+        margin-bottom: 8px;
+        color: #3e3e3e;
+    }
+
+    &__delivery {
+        padding: 8px 0;
+        color: #333333;
+        font-size: 14px;
+    }
+
+    &__description {
+        margin: 16px 0;
+        color: #333333;
+    }
+}

@@ -1,11 +1,13 @@
 .product-card {
-    position: relative;
-    
-    &__card {
-        max-width: 100%;
-    }
+    width: 100%;
+    max-width: 300px;
 
     &__card-media {
         height: 140px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.87);
     }
 }
