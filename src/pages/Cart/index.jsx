@@ -1,13 +1,9 @@
 import React from 'react';
-import DefaultPage from '../../components/_layout/DefaultPage';
 import Cart from '../../components/Cart';
+import DefaultPage from '../../components/_hoc/DefaultPage';
 
 const CartPage = () => {
-    return (
-        <DefaultPage>
-            <Cart />
-        </DefaultPage>
-    )
+    return <Cart />
 }
 
-export default CartPage;
+export default DefaultPage(CartPage);

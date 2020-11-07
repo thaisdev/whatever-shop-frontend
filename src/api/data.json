@@ -5,84 +5,96 @@
             "name": "Produto 1",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 2,
             "name": "Produto 2",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 3,
             "name": "Produto 3",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 4,
             "name": "Produto 4",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 5,
             "name": "Produto 5",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 6,
             "name": "Produto 6",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 7,
             "name": "Produto 7",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 8,
             "name": "Produto 8",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 9,
             "name": "Produto 9",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 10,
             "name": "Produto 10",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 11,
             "name": "Produto 11",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 12,
             "name": "Produto 12",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         }
     ],
     "cart": [
@@ -91,21 +103,24 @@
             "name": "Produto 1",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 2,
             "name": "Produto 2",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         },
         {
             "id": 3,
             "name": "Produto 3",
             "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
             "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati."
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "deliveryDays": 3
         }
     ]
 }

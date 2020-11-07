@@ -1,13 +1,9 @@
 import React from 'react';
-import DefaultPage from '../../components/_layout/DefaultPage';
 import BestSellers from '../../components/BestSellers';
+import DefaultPage from '../../components/_hoc/DefaultPage';
 
 const HomePage = () => {
-    return (
-        <DefaultPage>
-            <BestSellers />
-        </DefaultPage>
-    )
+    return <BestSellers />
 }
 
-export default HomePage;
+export default DefaultPage(HomePage);

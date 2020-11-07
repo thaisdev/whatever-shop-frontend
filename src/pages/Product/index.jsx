@@ -1,15 +1,11 @@
 import React from 'react';
-import DefaultPage from '../../components/_layout/DefaultPage';
 import { useParams } from 'react-router-dom';
 import Product from '../../components/Product';
+import DefaultPage from '../../components/_hoc/DefaultPage';
 
 const ProductPage = () => {
     const { id } = useParams();
-    return (
-        <DefaultPage>
-            <Product productId={id} />
-        </DefaultPage>
-    )
+    return <Product productId={id} />
 }
 
-export default ProductPage;
+export default DefaultPage(ProductPage);

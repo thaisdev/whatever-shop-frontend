@@ -9,8 +9,11 @@ import {
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useHistory } from "react-router-dom";
 import './header.scss';
+import { useAppContext } from '../../_context/GlobalContext';
 
 const Header = () => {
+    const { cartData } = useAppContext();
+    const quantityCartItems = cartData?.length || 0;
     const history = useHistory();
 
     return (
@@ -20,11 +23,14 @@ const Header = () => {
                 Whatever Shop
                 </Typography>
                 <div className="header__cart-button">
-                    <IconButton aria-label="show 4 new mails" color="inherit"
+                    <IconButton aria-label="Abrir carrinho" color="inherit"
                         onClick={() => history.push('/cart')}>
-                        <Badge badgeContent={4} color="secondary">
-                            <ShoppingCartIcon />
-                        </Badge>
+                        {
+                            quantityCartItems &&
+                            <Badge badgeContent={quantityCartItems} color="secondary">
+                                <ShoppingCartIcon />
+                            </Badge>
+                        }
                     </IconButton>
                 </div>
             </Toolbar>

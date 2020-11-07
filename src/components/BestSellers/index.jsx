@@ -3,8 +3,12 @@ import ProductCard from '../ProductCard';
 import { Grid } from '@material-ui/core';
 import './bestSellers.scss';
 import useAxios from 'axios-hooks';
+import { useAppContext } from '../_context/GlobalContext';
 
 const BestSellers = () => {
+    const { cartData } = useAppContext();
+    console.log('home', cartData);
+
     const [{ data, loading, error }] = useAxios('/products');
 
     if (loading) {

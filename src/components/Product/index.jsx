@@ -3,8 +3,12 @@ import { Grid, Typography, Button } from "@material-ui/core";
 import './product.scss';
 import { formatCurrency } from '../../utils/formatHelper';
 import useAxios from 'axios-hooks';
+import { useAppContext } from '../_context/GlobalContext';
 
 const Product = ({ productId }) => {
+    const { cartData } = useAppContext();
+    console.log('product', cartData);
+
     const [{ data, loading, error }] = useAxios(
         `products/${productId}`
     );
@@ -46,7 +50,7 @@ const Product = ({ productId }) => {
                         </Typography>
                     </div>
                     <div className="product__delivery">
-                        <Typography variant="span">
+                        <Typography>
                             {`Entrega a partir de ${data.deliveryDays} dias úteis`}
                         </Typography>
                     </div>

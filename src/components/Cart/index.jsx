@@ -10,8 +10,12 @@ import {
 import './cart.scss';
 import { formatCurrency } from '../../utils/formatHelper';
 import useAxios from 'axios-hooks';
+import { useAppContext } from '../_context/GlobalContext';
 
 const Cart = () => {
+    const { cartData } = useAppContext();
+    console.log('cart', cartData);
+
     const [{ data, loading, error }] = useAxios('/cart');
 
     const total = data?.reduce((acc, item) => acc + item.price, 0) || 0;
@@ -44,7 +48,7 @@ const Cart = () => {
                             <img src={item.image} alt={item.name} className="cart__image" />
                         </Grid>
                         <Grid container item xs={6}>
-                            <Typography variant="span" className="cart__product-name">
+                            <Typography className="cart__product-name">
                                 {item.name}
                             </Typography>
                             <Typography className="cart__product-description">
@@ -52,7 +56,7 @@ const Cart = () => {
                             </Typography>
                         </Grid>
                         <Grid container item xs={3} className="cart__product-price">
-                            <Typography variant="span">
+                            <Typography>
                                 {formatCurrency(item.price)}
                             </Typography>
                         </Grid>

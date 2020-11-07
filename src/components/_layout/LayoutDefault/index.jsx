@@ -2,9 +2,9 @@ import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import { Container } from '@material-ui/core';
-import './defaultPage.scss';
+import './layoutDefault.scss';
 
-const DefaultPage = ({ children }) => {
+const LayoutDefault = ({ children }) => {    
     return (
         <>
             <Header />
@@ -16,4 +16,4 @@ const DefaultPage = ({ children }) => {
     )
 }
 
-export default DefaultPage;
+export default LayoutDefault;
