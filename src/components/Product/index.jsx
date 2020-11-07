@@ -6,8 +6,7 @@ import useAxios from 'axios-hooks';
 import { useAppContext } from '../_context/GlobalContext';
 
 const Product = ({ productId }) => {
-    const { cartData } = useAppContext();
-    console.log('product', cartData);
+    const { addToCart } = useAppContext();
 
     const [{ data, loading, error }] = useAxios(
         `products/${productId}`
@@ -16,8 +15,7 @@ const Product = ({ productId }) => {
     const imagesPath = `${window.location.origin}/images`;
 
     const handleAddItemToCart = e => {
-        console.log(e);
-        console.log('add item to cart');
+        addToCart(data);
     }
 
     if (loading) {

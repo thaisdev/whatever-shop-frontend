@@ -11,13 +11,14 @@ import {
 import './productCard.scss';
 import { formatCurrency } from '../../../utils/formatHelper';
 import { useHistory } from "react-router-dom";
+import { useAppContext } from '../../_context/GlobalContext';
 
 const ProductCard = ({ product }) => {
+    const { addToCart } = useAppContext();
     const history = useHistory();
 
-    const handleAddToCart = e => {
-        console.log(e);
-        console.log('add item to cart');
+    const handleAddToCart = () => {
+        addToCart(product);
     }
 
     return (

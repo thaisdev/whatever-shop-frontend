@@ -9,7 +9,7 @@ import {
 import { formatCurrency } from '../../../utils/formatHelper';
 import './cartResume.scss';
 
-const CartResume = total => {
+const CartResume = ({total}) => {
     const handleCloseOrder = e => {
         console.log(e);
         console.log('handle close order');

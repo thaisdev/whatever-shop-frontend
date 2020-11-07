@@ -4,13 +4,15 @@ import { formatCurrency } from '../../../utils/formatHelper';
 import './cartProducts.scss';
 
 const CartProducts = ({ products }) => {
+    const imagesPath = `${window.location.origin}/images`;
+
     return (
         <>
             {products?.map((item, index) => (
                 <Grid container spacing={1} 
                     className="cart-item" key={`cart-item--${index}`}>
                     <Grid container item xs={3}>
-                        <img src={item.image} alt={item.name} className="cart-item__image" />
+                        <img src={`${imagesPath}/${item.image}`} alt={item.name} className="cart-item__image" />
                     </Grid>
                     <Grid container item xs={6}>
                         <Typography className="cart-item__name">

@@ -5,10 +5,28 @@ import useAxios from 'axios-hooks';
 
 export default function DefaultHOC(Page) {
     function DefaultPage(props) {
-        const [{ data: cartData }] = useAxios('/cart');
+        const [{ data: cartData }, refetch] = useAxios('/cart');
+        const [{ data: addItemCart, loading: loadingAdd },
+            addItemToCart
+        ] = useAxios(
+            {
+              url: '/cart',
+              method: 'POST'
+            },
+            { manual: true }
+        );
+
+        const addToCart = data => {
+            addItemToCart({data}).then(resp => {
+                if (resp.status === 201) {
+                    refetch();
+                }
+            });
+        }
 
         const contextProps = {
-            cartData
+            cartData,
+            addToCart
         }
 
         return (
