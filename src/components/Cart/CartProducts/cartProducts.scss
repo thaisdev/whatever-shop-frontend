@@ -1,0 +1,26 @@
+.cart-item {
+    padding: 24px 0;
+    border-top: 1px solid #f2f2f2;
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__name {
+        font-weight: 500;
+        color: #333;
+    }
+
+    .MuiTypography-root.cart__description.MuiTypography-body1 {
+        font-size: 14px;
+        color: #3e3e3e;
+    }
+
+    &__price {
+        justify-content: center;
+
+        .MuiTypography-root {
+            color: #3e3e3e;
+        }
+    }
+}

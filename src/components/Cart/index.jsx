@@ -1,37 +1,13 @@
 import React from 'react';
-import { 
-    Grid, 
-    Typography, 
-    Card,
-    CardContent,
-    CardActions,
-    Button
-} from '@material-ui/core';
-import './cart.scss';
-import { formatCurrency } from '../../utils/formatHelper';
-import useAxios from 'axios-hooks';
+import { Grid, Typography } from '@material-ui/core';
 import { useAppContext } from '../_context/GlobalContext';
+import CartProducts from './CartProducts';
+import CartResume from './CartResume';
+import './cart.scss';
 
 const Cart = () => {
     const { cartData } = useAppContext();
-    console.log('cart', cartData);
-
-    const [{ data, loading, error }] = useAxios('/cart');
-
-    const total = data?.reduce((acc, item) => acc + item.price, 0) || 0;
-
-    const handleCloseOrder = e => {
-        console.log(e);
-        console.log('handle close order');
-    }
-
-    if (loading) {
-        return <p>Loading...</p>;
-    }
-
-    if (error) {
-        return <p>Error!</p>;
-    }
+    const total = cartData?.reduce((acc, item) => acc + item.price, 0) || 0;
 
     return (
         <Grid container spacing={1} className="cart">
@@ -40,52 +16,24 @@ const Cart = () => {
                     Meu carrinho
                 </Typography>
             </Grid>
-            <Grid container item xs={8}>
-                {data?.map((item, index) => (
-                    <Grid container spacing={1} 
-                        className="cart__item" key={`cart-item--${index}`}>
-                        <Grid container item xs={3}>
-                            <img src={item.image} alt={item.name} className="cart__image" />
-                        </Grid>
-                        <Grid container item xs={6}>
-                            <Typography className="cart__product-name">
-                                {item.name}
-                            </Typography>
-                            <Typography className="cart__product-description">
-                                {item.description}
-                            </Typography>
-                        </Grid>
-                        <Grid container item xs={3} className="cart__product-price">
-                            <Typography>
-                                {formatCurrency(item.price)}
-                            </Typography>
-                        </Grid>
+            {
+                cartData?.length > 0 ?
+                <>
+                    <Grid container item xs={8}>
+                        <CartProducts products={cartData} />
                     </Grid>
-                )) }
-            </Grid>
-            <Grid container item xs={4} className="cart__resume">
-                <Card className="cart__resume-card">
-                    <CardContent>
-                        <Typography align="center" className="cart__resume-title">
-                            Resumo do pedido
-                        </Typography> 
-                        <div className="cart__resume-info">
-                            <Typography variant="body2" align="center" color="textSecondary" component="p" className="cart__resume-price">
-                                {`${formatCurrency(total)} à vista no Boleto`}
-                            </Typography>
-                            <Typography variant="body2" align="center" color="textSecondary" component="p" className="cart__resume-delivery">
-                                Entrega prevista para 23/11/2020
-                            </Typography>
-                        </div>
-                    </CardContent>
-                    <CardActions>
-                        <Button color="primary" className="cart__resume-button"
-                            onClick={handleCloseOrder}>
-                            Fechar pedido
-                        </Button>
-                    </CardActions>
-                </Card>
-            </Grid>
+                    <Grid container item xs={4} className="cart__resume">
+                        <CartResume total={total} />
+                    </Grid>
+                </> :
+                <Grid container item xs={12}>
+                    <div className="cart__empty">
+                        <Typography align="center" className="cart__empty-message">
+                            Você não possui produtos no carrinho
+                        </Typography>
+                    </div>
+                </Grid>
+            }
         </Grid>
     )
 }
