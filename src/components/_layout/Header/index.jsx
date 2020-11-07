@@ -25,12 +25,9 @@ const Header = () => {
                 <div className="header__cart-button">
                     <IconButton aria-label="Abrir carrinho" color="inherit"
                         onClick={() => history.push('/cart')}>
-                        {
-                            quantityCartItems &&
-                            <Badge badgeContent={quantityCartItems} color="secondary">
-                                <ShoppingCartIcon />
-                            </Badge>
-                        }
+                        <Badge badgeContent={quantityCartItems} color="secondary">
+                            <ShoppingCartIcon />
+                        </Badge>
                     </IconButton>
                 </div>
             </Toolbar>

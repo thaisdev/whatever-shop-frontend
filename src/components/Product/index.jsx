@@ -13,6 +13,8 @@ const Product = ({ productId }) => {
         `products/${productId}`
     );
 
+    const imagesPath = `${window.location.origin}/images`;
+
     const handleAddItemToCart = e => {
         console.log(e);
         console.log('add item to cart');
@@ -39,8 +41,8 @@ const Product = ({ productId }) => {
                     </Typography>
                 </div>
             </Grid>
-            <Grid container item md={6} xs={12}>
-                <img src={data.image} alt={data.name} className="product__image" />
+            <Grid container item md={6} xs={12} className="product__image">
+                <img src={`${imagesPath}/${data.image}`} alt={data.name} />
             </Grid>
             <Grid container item md={6} xs={12}>
                 <div className="product__info">

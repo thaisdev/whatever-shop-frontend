@@ -2,125 +2,84 @@
     "products": [
         {
             "id": 1,
-            "name": "Produto 1",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
+            "name": "Cadeira Gamer Profissional TGC12 Preta/Vermelha",
+            "image": "cadeira-gamer.jpg",
+            "price": 1807.17,
+            "description": "A tgc12 thunderx3 é uma cadeira gamer com revestimento de couro coberta com costuras de fibra de carbono. Seu estofado é em forma de diamantes construída com firmeza para proporcionar conforto enquanto você desfruta do prazer de jogar seus games favoritos.",
             "deliveryDays": 3
         },
         {
             "id": 2,
-            "name": "Produto 2",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
+            "name": "Monitor Dell Professional LED Full HD IPS 27” P2719H Preto",
+            "image": "monitor.jpg",
+            "price": 1439,
+            "description": "Mais produtivo do que nunca. O monitor P2719H de 27” oferece um nível de produtividade inteiramente novo para o local de trabalho, sem sacrificar o conforto e a praticidade com ampla variedade de recursos de ajuste, bordas finas e várias portas de conectividade.",
+            "deliveryDays": 8
         },
         {
             "id": 3,
-            "name": "Produto 3",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
+            "name": "Teclado e Mouse Wireless Dell, KM636, Preto",
+            "image": "teclado-mouse-sem-fio.jpg",
+            "price": 194.99,
+            "description": "Projetados com linhas elegantes, tamanho compacto e teclas chiclete, o Teclado e Mouse Wireless Dell KM636 - Preto da Dell oferecem um design contemporâneo e confortável com a conveniência da performance wireless.",
+            "deliveryDays": 5
         },
         {
             "id": 4,
-            "name": "Produto 4",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
+            "name": "Headset sem Fio Sony Playstation Série Ouro 7.1 - Preto",
+            "image": "headset-sem-fio.jpg",
+            "price": 379,
+            "description": "Experimente a adrenalina de mergulhar na cena de outra maneira! Ter os fones de ouvido específicos apra jogar muda completamente sua experiência em cada jogo.",
+            "deliveryDays": 7
         },
         {
             "id": 5,
-            "name": "Produto 5",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
+            "name": "Mouse Pad Professional Gaming, Havit, HV-MP830, 30x90 cm",
+            "image": "mousepad.jpg",
+            "price": 54.15,
+            "description": "HAVIT HV-MP830 Magic Eagle Large Professional Gaming Mouse Pad (preto) Design de tamanho grande Medir 900 * 300 * 3mm faz com que ele forneça maior área utilizável para cobrir teclado, mouse e coisas na área de trabalho ao jogar o jogo.",
+            "deliveryDays": 5
         },
         {
             "id": 6,
-            "name": "Produto 6",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
+            "name": "Base Cooler Vertical Para Notebook Multilaser - AC166",
+            "image": "base-cooler-notebook.jpg",
+            "price": 97.20,
+            "description": "Suporte para notebook, Multilaser. Ideal para manter o notebook apoiado em uma posição agradável e adequada, o suporte Multilaser possui superfície de metal, duas entradas USB e 4 ângulos para o melhor ajuste da tela.",
+            "deliveryDays": 12
         },
         {
             "id": 7,
-            "name": "Produto 7",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
+            "name": "Suporte Para Monitor 3 Gavetas Preto",
+            "image": "base-monitor-gavetas.png",
+            "price": 62.75,
+            "description": "Confeccionado em MDF, o suporte para monitor possui 3 gavetas e permite elevar o posicionamento do monitor, garantindo uma melhor postura e evitando dores na coluna.",
+            "deliveryDays": 15
         },
         {
             "id": 8,
-            "name": "Produto 8",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
+            "name": "Mesa Gamer Com Led Vision Preta E Azul",
+            "image": "mesa-gamer.jpg",
+            "price": 486.89,
+            "description": "Que tal a Mesa Gamer Vision? A autenticidade do seu ambiente gamer está garantida com a presença da Mesa Vision. Um primor não só para a decoração como para a organização, a peça tem esse design pensando exclusivamente para o conforto dos gamers, conferindo um estilo dinâmico e ágil ao cômodo.",
+            "deliveryDays": 18
         },
         {
             "id": 9,
-            "name": "Produto 9",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
+            "name": "Apoio de Pé, Multivisão, Apoio-PR, Preto, 19.5x47x41 cm",
+            "image": "apoio-pes.jpg",
+            "price": 76.56,
+            "description": "Apoio com regulagem de inclinação para os pés. Produto feito de madeira MDF. Atende as normas NR17. Universal Dimensões da Embalagem (A x L x C): 4 x 31 x 47 cm Peso: 0,2kg.",
+            "deliveryDays": 4
         },
         {
             "id": 10,
-            "name": "Produto 10",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
-        },
-        {
-            "id": 11,
-            "name": "Produto 11",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
-        },
-        {
-            "id": 12,
-            "name": "Produto 12",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
+            "name": "Notebook Gamer Acer NVIDIA",
+            "image": "notebook.jpg",
+            "price": 5199,
+            "description": "Notebook Gamer Acer NVIDIA GeForce GTX 1650 AMD Ryzen 7-3750H 8GB 1TB 128GB SSD Tela Full HD 15.6” Endless OS Aspire Nitro 5 AN515-43-R4C3.",
+            "deliveryDays": 13
         }
     ],
-    "cart": [
-        {
-            "id": 1,
-            "name": "Produto 1",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
-        },
-        {
-            "id": 2,
-            "name": "Produto 2",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
-        },
-        {
-            "id": 3,
-            "name": "Produto 3",
-            "image": "https://uploads.metropoles.com/wp-content/uploads/2020/06/29114618/Cadeira-gamer.jpg",
-            "price": 1000,
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae recusandae ipsa, non voluptatum labore id corrupti, asperiores error molestias provident laudantium perferendis, odit harum. Debitis explicabo repudiandae expedita a obcaecati.",
-            "deliveryDays": 3
-        }
-    ]
+    "cart": []
 }

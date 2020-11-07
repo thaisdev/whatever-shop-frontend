@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductCard from '../ProductCard';
+import ProductCard from './ProductCard';
 import { Grid } from '@material-ui/core';
 import './bestSellers.scss';
 import useAxios from 'axios-hooks';

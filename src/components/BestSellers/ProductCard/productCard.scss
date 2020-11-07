@@ -2,7 +2,8 @@
     width: 100%;
     max-width: 300px;
 
-    &__card-media {
+    .MuiCardMedia-root.product-card__card-media {
         height: 140px;
+        background-size: contain;
     }
 }

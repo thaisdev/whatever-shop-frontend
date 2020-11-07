@@ -9,7 +9,7 @@ import {
     Typography
 } from '@material-ui/core';
 import './productCard.scss';
-import { formatCurrency } from '../../utils/formatHelper';
+import { formatCurrency } from '../../../utils/formatHelper';
 import { useHistory } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
@@ -27,11 +27,11 @@ const ProductCard = ({ product }) => {
             }>
                 <CardMedia
                     className="product-card__card-media"
-                    image={product.image}
+                    image={`images/${product.image}`}
                     title={product.name}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom component="h2">
                         {product.name}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
