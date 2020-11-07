@@ -1,6 +1,10 @@
 import React from "react";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
+
+import { configure } from 'axios-hooks';
+import Axios from 'axios';
+
 import HomePage from './pages/Home';
 import ProductPage from './pages/Product';
 import CartPage from './pages/Cart';
@@ -8,6 +12,11 @@ import CartPage from './pages/Cart';
 import './App.css';
 
 const hist = createBrowserHistory();
+
+const axios = Axios.create({
+  baseURL: 'http://localhost:3004',
+});
+configure({ axios });
 
 const App = () => {
   return (

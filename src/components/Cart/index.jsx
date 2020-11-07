@@ -3,21 +3,30 @@ import {
     Grid, 
     Typography, 
     Card,
-    CardActionArea,
     CardContent,
     CardActions,
     Button
 } from '@material-ui/core';
-import cart from './cart.json';
 import './cart.scss';
 import { formatCurrency } from '../../utils/formatHelper';
+import useAxios from 'axios-hooks';
 
 const Cart = () => {
-    const total = cart.reduce((acc, item) => acc + item.price, 0);
+    const [{ data, loading, error }] = useAxios('/cart');
+
+    const total = data?.reduce((acc, item) => acc + item.price, 0) || 0;
 
     const handleCloseOrder = e => {
         console.log(e);
         console.log('handle close order');
+    }
+
+    if (loading) {
+        return <p>Loading...</p>;
+    }
+
+    if (error) {
+        return <p>Error!</p>;
     }
 
     return (
@@ -28,29 +37,27 @@ const Cart = () => {
                 </Typography>
             </Grid>
             <Grid container item xs={8}>
-                {
-                    cart.map((item, index) => (
-                        <Grid container spacing={1} 
-                            className="cart__item" key={`cart-item--${index}`}>
-                            <Grid container item xs={3}>
-                                <img src={item.image} alt={item.name} className="cart__image" />
-                            </Grid>
-                            <Grid container item xs={6}>
-                                <Typography variant="span" className="cart__product-name">
-                                    {item.name}
-                                </Typography>
-                                <Typography className="cart__product-description">
-                                    {item.description}
-                                </Typography>
-                            </Grid>
-                            <Grid container item xs={3} className="cart__product-price">
-                                <Typography variant="span">
-                                    {formatCurrency(item.price)}
-                                </Typography>
-                            </Grid>
+                {data?.map((item, index) => (
+                    <Grid container spacing={1} 
+                        className="cart__item" key={`cart-item--${index}`}>
+                        <Grid container item xs={3}>
+                            <img src={item.image} alt={item.name} className="cart__image" />
                         </Grid>
-                    ))
-                }
+                        <Grid container item xs={6}>
+                            <Typography variant="span" className="cart__product-name">
+                                {item.name}
+                            </Typography>
+                            <Typography className="cart__product-description">
+                                {item.description}
+                            </Typography>
+                        </Grid>
+                        <Grid container item xs={3} className="cart__product-price">
+                            <Typography variant="span">
+                                {formatCurrency(item.price)}
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                )) }
             </Grid>
             <Grid container item xs={4} className="cart__resume">
                 <Card className="cart__resume-card">

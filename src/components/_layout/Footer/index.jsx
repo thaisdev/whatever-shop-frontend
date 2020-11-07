@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography } from '@material-ui/core';
 import './footer.scss';
 
-const Footer = ({ children }) => {
+const Footer = () => {
     return (
         <div className="footer">
             <Typography className="footer__text">
