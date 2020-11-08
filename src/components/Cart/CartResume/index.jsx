@@ -6,14 +6,16 @@ import {
     CardActions,
     Button
 } from '@material-ui/core';
-import { formatCurrency } from '../../../utils/formatHelper';
+import { formatCurrency, formatDateBr } from '../../../utils/formatHelper';
 import './cartResume.scss';
+import { calcDeliveryDate } from '../../../utils/cartUtils';
 
-const CartResume = ({total}) => {
+const CartResume = ({total, deliveryDays}) => {
     const handleCloseOrder = e => {
         console.log(e);
         console.log('handle close order');
     }
+    const deliveryDate = calcDeliveryDate(deliveryDays);
 
     return (
         <Card className="cart-resume__card">
@@ -26,7 +28,7 @@ const CartResume = ({total}) => {
                         {`${formatCurrency(total)} à vista no Boleto`}
                     </Typography>
                     <Typography variant="body2" align="center" color="textSecondary" component="p" className="cart-resume__delivery">
-                        Entrega prevista para 23/11/2020
+                        {`Entrega prevista para ${formatDateBr(deliveryDate)}`}
                     </Typography>
                 </div>
             </CardContent>

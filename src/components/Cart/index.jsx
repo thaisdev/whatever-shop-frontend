@@ -7,7 +7,10 @@ import './cart.scss';
 
 const Cart = () => {
     const { cartData } = useAppContext();
-    const total = cartData?.reduce((acc, item) => acc + item.price, 0) || 0;
+    const total = cartData?.reduce((acc, item) => acc + item.totalPrice, 0) || 0;
+    const deliveryDays = cartData?.reduce((acc, item) => 
+        acc > item.deliveryDays ? acc : item.deliveryDays, 0
+    ) || 0;
 
     return (
         <Grid container spacing={1} className="cart">
@@ -19,11 +22,11 @@ const Cart = () => {
             {
                 cartData?.length > 0 ?
                 <>
-                    <Grid container item xs={8}>
-                        <CartProducts products={cartData} />
+                    <Grid container item xs={9}>
+                        <CartProducts cartItems={cartData} />
                     </Grid>
-                    <Grid container item xs={4} className="cart__resume">
-                        <CartResume total={total} />
+                    <Grid container item xs={3} className="cart__resume">
+                        <CartResume total={total} deliveryDays={deliveryDays} />
                     </Grid>
                 </> :
                 <Grid container item xs={12}>

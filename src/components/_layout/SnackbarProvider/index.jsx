@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Snackbar } from '@material-ui/core';
 import { Alert } from '@material-ui/lab';
 
-const SnackbarProvider = ({ show, message, type }) => {
+const SnackbarProvider = ({ show, message, type, onClose }) => {
     const [open, setOpen] = useState(show);
+    const prevShowRef = useRef();
 
     useEffect(() => {
-        setOpen(show);
+        prevShowRef.current = open;
+        if (prevShowRef.current && open !== show) {
+            setOpen(show);
+        }
     }, [show]);
 
     const handleClose = (event, reason) => {
@@ -15,6 +19,7 @@ const SnackbarProvider = ({ show, message, type }) => {
         }
 
         setOpen(false);
+        onClose(false);
     };
 
     return (

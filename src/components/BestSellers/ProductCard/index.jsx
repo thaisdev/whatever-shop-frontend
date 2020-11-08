@@ -12,14 +12,12 @@ import './productCard.scss';
 import { formatCurrency } from '../../../utils/formatHelper';
 import { useHistory } from "react-router-dom";
 import { useAppContext } from '../../_context/GlobalContext';
+import QuantityItemCart from '../../QuantityItemCart';
 
 const ProductCard = ({ product }) => {
-    const { addToCart } = useAppContext();
+    const { cartData, addToCart } = useAppContext();
+    const cartHasItem = cartData?.find(item => item.id === product.id) || false;
     const history = useHistory();
-
-    const handleAddToCart = () => {
-        addToCart(product);
-    }
 
     return (
         <Card className="product-card">
@@ -40,10 +38,15 @@ const ProductCard = ({ product }) => {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
-                <Button size="small" color="primary" onClick={handleAddToCart}>
-                    Adicionar ao carrinho
-                </Button>
+            <CardActions className="product-card__add">
+                {
+                    cartHasItem ?
+                    <QuantityItemCart product={cartHasItem} />
+                    : 
+                    <Button color="primary" onClick={() => addToCart(product)}>
+                        Adicionar ao carrinho
+                    </Button>
+                }
             </CardActions>
         </Card>
     )

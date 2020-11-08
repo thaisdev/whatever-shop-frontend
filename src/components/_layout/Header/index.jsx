@@ -13,7 +13,8 @@ import { useAppContext } from '../../_context/GlobalContext';
 
 const Header = () => {
     const { cartData } = useAppContext();
-    const quantityCartItems = cartData?.length || 0;
+    const quantityCartItems = cartData?.reduce((acc, item) => 
+        acc + parseInt(item.quantity), 0) || 0;
     const history = useHistory();
 
     return (

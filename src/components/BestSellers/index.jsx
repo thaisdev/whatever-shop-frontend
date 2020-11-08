@@ -1,18 +1,14 @@
 import React from 'react';
 import ProductCard from './ProductCard';
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import './bestSellers.scss';
 import useAxios from 'axios-hooks';
 
 const BestSellers = () => {
-    const [{ data, loading, error }] = useAxios('/products');
+    const [{ data, loading }] = useAxios('/products');
 
     if (loading) {
-        return <p>Loading...</p>;
-    }
-
-    if (error) {
-        return <p>Error!</p>;
+        return <Typography>Carregando...</Typography>;
     }
 
     return (

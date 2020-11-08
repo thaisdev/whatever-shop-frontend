@@ -4,6 +4,7 @@
 
     &__image {
         max-width: 100%;
+        max-height: 300px;
     }
 
     &__name {
@@ -21,6 +22,14 @@
 
         .MuiTypography-root {
             color: #3e3e3e;
+        }
+    }
+
+    &__quantity {
+        height: 50px;
+        
+        .MuiFormControl-root.MuiTextField-root.quantity-item-cart__input {
+            width: calc(100% - 96px);
         }
     }
 }

@@ -4,30 +4,41 @@ import './product.scss';
 import { formatCurrency } from '../../utils/formatHelper';
 import useAxios from 'axios-hooks';
 import { useAppContext } from '../_context/GlobalContext';
+import QuantityItemCart from '../QuantityItemCart';
 
 const Product = ({ productId }) => {
-    const { addToCart } = useAppContext();
-
+    const imagesPath = `${window.location.origin}/images`;
+    const { cartData, addToCart } = useAppContext();
     const [{ data, loading, error }] = useAxios(
         `products/${productId}`
     );
 
-    const imagesPath = `${window.location.origin}/images`;
-
-    const handleAddItemToCart = e => {
-        addToCart(data);
-    }
+    const cartHasItem = cartData?.find(item => item.id == productId) || false;
 
     if (loading) {
-        return <p>Loading...</p>;
+        return (
+            <Grid container spacing={1}>
+                <Grid container item xs={12}>
+                    <div className="product__message">
+                        <Typography align="center">Carregando...</Typography>  
+                    </div>
+                </Grid>
+            </Grid>
+        );
     }
 
-    if (error) {
-        return <p>Error!</p>;
-    }
-
-    if (!data && !loading) {
-        return <p>Ops!</p>;
+    if (!data) {
+        return (
+            <Grid container spacing={1}>
+                <Grid container item xs={12}>
+                    <div className="product__message">
+                        <Typography align="center">
+                            {`Não foi encontrado um produto com o ID ${productId}`}
+                        </Typography>  
+                    </div>
+                </Grid>
+            </Grid>
+        );
     }
 
     return (
@@ -59,10 +70,15 @@ const Product = ({ productId }) => {
                             {data.description}
                         </Typography>
                     </div>
-                    <Button variant="contained" color="primary" 
-                        disableElevation onClick={handleAddItemToCart}>
-                        Adicionar ao carrinho
-                    </Button>
+                    {
+                        cartHasItem ?
+                        <QuantityItemCart product={cartHasItem} />
+                        :
+                        <Button variant="contained" color="primary" 
+                            disableElevation onClick={() => addToCart(data)}>
+                            Adicionar ao carrinho
+                        </Button>
+                    }
                 </div>
             </Grid>
         </Grid>

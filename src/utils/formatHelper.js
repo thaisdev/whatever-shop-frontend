@@ -9,6 +9,15 @@ const formatCurrency = value => {
     return 'R$ 0,00';
 }
 
+const formatDateBr = date => {
+    if (date) {
+        return date.toLocaleDateString();
+    }
+
+    return '';
+}
+
 export {
-    formatCurrency
+    formatCurrency,
+    formatDateBr
 }

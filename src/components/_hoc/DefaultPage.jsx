@@ -22,8 +22,10 @@ export default function DefaultHOC(Page) {
             { manual: true }
         );
 
-        const addToCart = data => {
-            addItemToCart({data}).then(resp => {
+        const addToCart = item => {
+            addItemToCart({
+                data: {...item, quantity: 1, totalPrice: item.price}
+            }).then(resp => {
                 if (resp.status === 201) {
                     showAlertSuccess('Item adicionado ao carrinho com sucesso!');
                     refetch();
@@ -31,7 +33,6 @@ export default function DefaultHOC(Page) {
                     showAlertError('Falha ao adicionar item ao carrinho');
                 }
             }).catch(err => {
-                console.log(err);
                 showAlertError(err?.message || 'Falha ao adicionar item ao carrinho');
             });
         }
@@ -54,14 +55,22 @@ export default function DefaultHOC(Page) {
 
         const contextProps = {
             cartData,
-            addToCart
+            addToCart,
+            refetchCart: refetch,
+            showAlertSuccess,
+            showAlertError
         }
 
         return (
             <ContextProvider {...contextProps}>
                 <LayoutDefault>
                     <Page {...props} />
-                    <SnackbarProvider {...snackProps} />
+                    {
+                        snackProps.show &&
+                        <SnackbarProvider {...snackProps} onClose={
+                            () => setSnackProps({...snackProps, show: false})
+                        } />
+                    }
                 </LayoutDefault>
             </ContextProvider>
         );
