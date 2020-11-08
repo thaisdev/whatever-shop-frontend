@@ -81,5 +81,16 @@
       "deliveryDays": 13
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 3,
+      "name": "Teclado e Mouse Wireless Dell, KM636, Preto",
+      "image": "teclado-mouse-sem-fio.jpg",
+      "price": 194.99,
+      "description": "Projetados com linhas elegantes, tamanho compacto e teclas chiclete, o Teclado e Mouse Wireless Dell KM636 - Preto da Dell oferecem um design contemporâneo e confortável com a conveniência da performance wireless.",
+      "deliveryDays": 5,
+      "quantity": 1,
+      "totalPrice": 194.99
+    }
+  ]
 }

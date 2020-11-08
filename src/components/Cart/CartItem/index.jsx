@@ -5,6 +5,7 @@ import QuantityItemCart from '../../QuantityItemCart';
 import useAxios from 'axios-hooks';
 import { useAppContext } from '../../_context/GlobalContext';
 import './cartItem.scss';
+import LinkRouter from "react-router-dom/Link";
 
 const CartItem = ({ item }) => {
     const imagesPath = `${window.location.origin}/images`;
@@ -33,15 +34,19 @@ const CartItem = ({ item }) => {
     return (
         <Grid container spacing={1} className="cart-item">
             <Grid container item md={3} xs={12}>
-                <img src={`${imagesPath}/${item.image}`} alt={item.name} className="cart-item__image" />
+                <LinkRouter to={`product/${item.id}`}>
+                    <img src={`${imagesPath}/${item.image}`} alt={item.name} className="cart-item__image" />
+                </LinkRouter>
             </Grid>
             <Grid container item md={6} xs={12}>
-                <Typography className="cart-item__name">
-                    {item.name}
-                </Typography>
-                <Typography className="cart-item__description">
-                    {item.description}
-                </Typography>
+                <LinkRouter to={`product/${item.id}`} className="cart-item__link">
+                    <Typography className="cart-item__name">
+                        {item.name}
+                    </Typography>
+                    <Typography className="cart-item__description">
+                        {item.description}
+                    </Typography>
+                </LinkRouter>
             </Grid>
             <Grid container item md={3} xs={12}>
                 <Grid container spacing={1}>
