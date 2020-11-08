@@ -24,8 +24,6 @@
     }
 
     &__price {
-        justify-content: center;
-
         .MuiTypography-root {
             color: #3e3e3e;
         }
@@ -36,6 +34,14 @@
         
         .MuiFormControl-root.MuiTextField-root.quantity-item-cart__input {
             width: calc(100% - 96px);
+        }
+    }
+
+    &__delete-button {
+        .MuiTypography-root.MuiLink-root.MuiLink-underlineHover.MuiLink-button.MuiTypography-body2.MuiTypography-colorPrimary {
+            color: #3e3e3e;
+            display: flex;
+            align-items: center;
         }
     }
 }

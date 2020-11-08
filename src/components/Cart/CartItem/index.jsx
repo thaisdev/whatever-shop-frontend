@@ -6,6 +6,7 @@ import useAxios from 'axios-hooks';
 import { useAppContext } from '../../_context/GlobalContext';
 import './cartItem.scss';
 import LinkRouter from "react-router-dom/Link";
+import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 
 const CartItem = ({ item }) => {
     const imagesPath = `${window.location.origin}/images`;
@@ -55,14 +56,14 @@ const CartItem = ({ item }) => {
                             <QuantityItemCart product={item} />
                         </div>
                     </Grid>
-                    <Grid container item xs={12} className="cart-item__price">
+                    <Grid container item xs={12} className="cart-item__price" justify="center">
                         <Typography>
                             {formatCurrency(item.totalPrice)}
                         </Typography>
                     </Grid>
-                    <Grid container item xs={12} className="cart-item__price">
-                        <Link component="button" variant="body2"
-                            onClick={handleDelete}>
+                    <Grid container item xs={12} className="cart-item__delete-button" justify="center">
+                        <Link component="button" variant="body2" onClick={handleDelete}>
+                            <DeleteOutlineIcon />
                             Remover
                         </Link>
                     </Grid>
