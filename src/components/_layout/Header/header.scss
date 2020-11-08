@@ -1,4 +1,9 @@
 .header {
+    &__link {
+        text-decoration: none;
+        color: #fff;
+    }
+
     &__cart-button {
         margin-left: auto;
     }
