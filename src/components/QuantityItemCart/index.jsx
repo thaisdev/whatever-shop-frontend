@@ -8,9 +8,7 @@ import './quantityItemCart.scss';
 const QuantityItemCart = ({ product }) => {
     const [quantity, setQuantity] = useState(product.quantity);
     const { refetchCart, showAlertSuccess, showAlertError } = useAppContext();
-    const [{ data, loading },
-        updateQuantityCart
-    ] = useAxios(
+    const [{ data, loading }, updateQuantityCart ] = useAxios(
         {
             url: `/cart/${product.id}`,
             method: 'PUT'

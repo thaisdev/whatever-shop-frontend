@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { useAppContext } from '../_context/GlobalContext';
-import CartProducts from './CartProducts';
+import CartItem from './CartItem';
 import CartResume from './CartResume';
 import './cart.scss';
 
@@ -22,10 +22,12 @@ const Cart = () => {
             {
                 cartData?.length > 0 ?
                 <>
-                    <Grid container item xs={9}>
-                        <CartProducts cartItems={cartData} />
+                    <Grid container item md={9} xs={12}>
+                        {cartData?.map((item, index) => (
+                            <CartItem item={item} key={`cart-item--${index}`} />
+                        )) }
                     </Grid>
-                    <Grid container item xs={3} className="cart__resume">
+                    <Grid container item md={3} xs={12} className="cart__resume">
                         <CartResume total={total} deliveryDays={deliveryDays} />
                     </Grid>
                 </> :
