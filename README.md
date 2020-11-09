@@ -4,7 +4,11 @@ Aplicação frontend em ReactJS para simular interações de um carrinho em um E
 
 ## Orientações para rodar a aplicação
 
-- A aplicação está usando json-server para simular uma api. Dentro da pasta raiz do projeto execute o comando:
+- Na pasta raiz do projeto execute o comando:
+```
+npm install
+```
+- A aplicação está usando json-server para simular uma api, para rodar execute o comando:
 ```
 npm run api
 ```
