@@ -81,5 +81,16 @@
       "deliveryDays": 13
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 10,
+      "name": "Notebook Gamer Acer NVIDIA",
+      "image": "notebook.jpg",
+      "price": 5199,
+      "description": "Notebook Gamer Acer NVIDIA GeForce GTX 1650 AMD Ryzen 7-3750H 8GB 1TB 128GB SSD Tela Full HD 15.6” Endless OS Aspire Nitro 5 AN515-43-R4C3.",
+      "deliveryDays": 13,
+      "quantity": 1,
+      "totalPrice": 5199
+    }
+  ]
 }

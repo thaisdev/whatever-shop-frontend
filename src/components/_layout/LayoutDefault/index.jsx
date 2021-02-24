@@ -1,19 +1,23 @@
-import React from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
-import { Container } from '@material-ui/core';
-import './layoutDefault.scss';
+import { Container } from "@material-ui/core";
+import { createGlobalStyle } from "styled-components";
+import React from "react";
+import ContainerStyled from "./ContainerStyled";
+import Header from "../Header";
+import Footer from "../Footer";
 
-const LayoutDefault = ({ children }) => {    
-    return (
-        <>
-            <Header />
-            <Container className="default-page__container">
-                {children}
-            </Container>
-            <Footer />
-        </>
-    )
-}
+const GlobalStyle = createGlobalStyle``;
+
+const LayoutDefault = ({ children }) => {
+  return (
+    <>
+      <GlobalStyle />
+      <Header />
+      <ContainerStyled>
+        <Container>{children}</Container>
+      </ContainerStyled>
+      <Footer />
+    </>
+  );
+};
 
 export default LayoutDefault;

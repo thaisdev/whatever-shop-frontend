@@ -1,15 +1,13 @@
-import React from 'react';
-import { Typography } from '@material-ui/core';
-import './footer.scss';
+import React from "react";
+import { Typography } from "@material-ui/core";
+import FooterStyled from "./FooterStyled";
 
 const Footer = () => {
-    return (
-        <div className="footer">
-            <Typography className="footer__text">
-                Whatever Shop
-            </Typography>
-        </div>
-    )
-}
+  return (
+    <FooterStyled>
+      <Typography className="text">Whatever Shop</Typography>
+    </FooterStyled>
+  );
+};
 
 export default Footer;
