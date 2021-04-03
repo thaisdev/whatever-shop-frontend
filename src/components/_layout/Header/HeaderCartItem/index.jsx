@@ -9,16 +9,16 @@ const HeaderCartItem = ({ item }) => {
     <HeaderCartItemStyled>
       <Grid container spacing={1}>
         <Grid container item xs={3} justify="center">
-          <img src={imageUrl} alt={item.name} className="image" />
+          <img src={imageUrl} alt={item.name} className="cart-item-image" />
         </Grid>
         <Grid container item xs={6}>
-          <Typography className="name">{item.name}</Typography>
-          <Typography className="quantity">
+          <Typography className="cart-item-name">{item.name}</Typography>
+          <Typography className="cart-item-quantity">
             {`Quantidade: ${item.quantity}`}
           </Typography>
         </Grid>
         <Grid container item xs={3} justify="center">
-          <Typography className="price">
+          <Typography className="cart-item-price">
             {formatCurrency(item.totalPrice)}
           </Typography>
         </Grid>

@@ -22,7 +22,7 @@ const BestSellers = () => {
             md={4}
             xs={12}
             key={`product-card--${index}`}
-            className="item"
+            className="best-seller-item"
           >
             <ProductCard product={product} />
           </Grid>

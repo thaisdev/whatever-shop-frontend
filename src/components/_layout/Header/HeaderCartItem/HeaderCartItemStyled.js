@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.div`
-  .image {
+  .cart-item-image {
     width: 100%;
     max-width: 60px;
     height: auto;
@@ -9,7 +9,7 @@ export default styled.div`
     object-position: center;
   }
 
-  .MuiTypography-root.name.MuiTypography-body1 {
+  .MuiTypography-root.cart-item-name.MuiTypography-body1 {
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
@@ -18,12 +18,12 @@ export default styled.div`
     color: #333;
   }
 
-  .MuiTypography-root.quantity.MuiTypography-body1 {
+  .MuiTypography-root.cart-item-quantity.MuiTypography-body1 {
     font-size: 12px;
     color: #3e3e3e;
   }
 
-  .MuiTypography-root.price.MuiTypography-body1 {
+  .MuiTypography-root.cart-item-price.MuiTypography-body1 {
     font-size: 14px;
     color: #3e3e3e;
     font-weight: 600;

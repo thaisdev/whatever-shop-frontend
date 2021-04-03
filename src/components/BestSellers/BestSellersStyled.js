@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.div`
-  .item {
+  .best-seller-item {
     justify-content: center;
   }
 `;

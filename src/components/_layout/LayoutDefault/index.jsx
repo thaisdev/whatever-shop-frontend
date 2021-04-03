@@ -13,7 +13,7 @@ const LayoutDefault = ({ children }) => {
       <GlobalStyle />
       <Header />
       <ContainerStyled>
-        <Container>{children}</Container>
+        <Container className="container">{children}</Container>
       </ContainerStyled>
       <Footer />
     </>

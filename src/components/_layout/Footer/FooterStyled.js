@@ -4,7 +4,7 @@ export default styled.div`
   background: #f2f2f2;
   padding: 24px;
 
-  .text {
+  .footer-text {
     color: #333333;
   }
 `;

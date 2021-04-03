@@ -36,7 +36,7 @@ const CartItem = ({ item }) => {
 
   return (
     <CartItemStyled>
-      <Grid container spacing={1}>
+      <Grid container spacing={1} className="cart-item">
         <Grid container item md={3} xs={12}>
           <LinkRouter to={`product/${item.id}`}>
             <img

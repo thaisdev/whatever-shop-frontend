@@ -5,7 +5,7 @@ import useAxios from "axios-hooks";
 import { useAppContext } from "../_context/GlobalContext";
 import QuantityItemCartStyled from "./QuantityItemCartStyled";
 
-const QuantityItemCart = ({ product }) => {
+const QuantityItemCart = ({ product, ...rest }) => {
   const [quantity, setQuantity] = useState(product.quantity);
   const { refetchCart, showAlertSuccess, showAlertError } = useAppContext();
   const [{ data, loading }, updateQuantityCart] = useAxios(
@@ -57,7 +57,7 @@ const QuantityItemCart = ({ product }) => {
   };
 
   return (
-    <QuantityItemCartStyled>
+    <QuantityItemCartStyled {...rest}>
       <IconButton
         color="primary"
         aria-label="remove quantity"
@@ -70,7 +70,7 @@ const QuantityItemCart = ({ product }) => {
       <TextField
         type="number"
         value={quantity}
-        className="input"
+        className="quantity-input"
         onChange={handleChangeInput}
         variant="outlined"
       />

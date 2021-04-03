@@ -21,7 +21,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <ProductCardStyled>
-      <Card>
+      <Card className="product-card">
         <CardActionArea onClick={() => history.push(`product/${product.id}`)}>
           <CardMedia
             className="card-media"

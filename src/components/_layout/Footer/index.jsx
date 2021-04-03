@@ -5,7 +5,7 @@ import FooterStyled from "./FooterStyled";
 const Footer = () => {
   return (
     <FooterStyled>
-      <Typography className="text">Whatever Shop</Typography>
+      <Typography className="footer-text">Whatever Shop</Typography>
     </FooterStyled>
   );
 };
