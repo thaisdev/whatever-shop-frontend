@@ -8,7 +8,7 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router";
 import { formatCurrency } from "../../../utils/formatHelper";
 import { useAppContext } from "../../_context/GlobalContext";
 import QuantityItemCart from "../../QuantityItemCart";
