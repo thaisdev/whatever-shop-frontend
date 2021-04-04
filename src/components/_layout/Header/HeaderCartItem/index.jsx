@@ -8,16 +8,18 @@ const HeaderCartItem = ({ item }) => {
   return (
     <HeaderCartItemStyled>
       <Grid container spacing={1}>
-        <Grid container item xs={3} justify="center">
+        <Grid item xs={3} justify="center">
           <img src={imageUrl} alt={item.name} className="cart-item-image" />
         </Grid>
-        <Grid container item xs={6}>
-          <Typography className="cart-item-name">{item.name}</Typography>
-          <Typography className="cart-item-quantity">
-            {`Quantidade: ${item.quantity}`}
-          </Typography>
+        <Grid item xs={6}>
+          <div>
+            <Typography className="cart-item-name">{item.name}</Typography>
+            <Typography className="cart-item-quantity">
+              {`Quantidade: ${item.quantity}`}
+            </Typography>
+          </div>
         </Grid>
-        <Grid container item xs={3} justify="center">
+        <Grid item xs={3} align="end">
           <Typography className="cart-item-price">
             {formatCurrency(item.totalPrice)}
           </Typography>

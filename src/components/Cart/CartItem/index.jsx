@@ -42,24 +42,32 @@ const CartItem = ({ item }) => {
             <img
               src={`${imagesPath}/${item.image}`}
               alt={item.name}
-              className="image"
+              className="cart-item-image"
             />
           </LinkRouter>
         </Grid>
         <Grid container item md={6} xs={12}>
-          <LinkRouter to={`product/${item.id}`} className="link">
-            <Typography className="name">{item.name}</Typography>
-            <Typography className="description">{item.description}</Typography>
+          <LinkRouter to={`product/${item.id}`} className="cart-item-link">
+            <Typography className="cart-item-name">{item.name}</Typography>
+            <Typography className="cart-item-description">
+              {item.description}
+            </Typography>
           </LinkRouter>
         </Grid>
         <Grid container item md={3} xs={12}>
           <Grid container spacing={1}>
             <Grid container item xs={12} justify="center">
-              <div className="quantity">
+              <div className="cart-item-quantity">
                 <QuantityItemCart product={item} />
               </div>
             </Grid>
-            <Grid container item xs={12} className="price" justify="center">
+            <Grid
+              container
+              item
+              xs={12}
+              className="cart-item-price"
+              justify="center"
+            >
               <Typography>{formatCurrency(item.totalPrice)}</Typography>
             </Grid>
             <Grid

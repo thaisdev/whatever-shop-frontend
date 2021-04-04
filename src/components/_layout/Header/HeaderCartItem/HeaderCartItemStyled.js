@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export default styled.div`
+  width: 100%;
+
   .cart-item-image {
     width: 100%;
     max-width: 60px;
