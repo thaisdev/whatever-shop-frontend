@@ -81,5 +81,36 @@
       "deliveryDays": 13
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 10,
+      "name": "Notebook Gamer Acer NVIDIA",
+      "image": "notebook.jpg",
+      "price": 5199,
+      "description": "Notebook Gamer Acer NVIDIA GeForce GTX 1650 AMD Ryzen 7-3750H 8GB 1TB 128GB SSD Tela Full HD 15.6” Endless OS Aspire Nitro 5 AN515-43-R4C3.",
+      "deliveryDays": 13,
+      "quantity": 1,
+      "totalPrice": 5199
+    },
+    {
+      "id": 7,
+      "name": "Suporte Para Monitor 3 Gavetas Preto",
+      "image": "base-monitor-gavetas.png",
+      "price": 62.75,
+      "description": "Confeccionado em MDF, o suporte para monitor possui 3 gavetas e permite elevar o posicionamento do monitor, garantindo uma melhor postura e evitando dores na coluna.",
+      "deliveryDays": 15,
+      "quantity": 1,
+      "totalPrice": 62.75
+    },
+    {
+      "id": 6,
+      "name": "Base Cooler Vertical Para Notebook Multilaser - AC166",
+      "image": "base-cooler-notebook.jpg",
+      "price": 97.2,
+      "description": "Suporte para notebook, Multilaser. Ideal para manter o notebook apoiado em uma posição agradável e adequada, o suporte Multilaser possui superfície de metal, duas entradas USB e 4 ângulos para o melhor ajuste da tela.",
+      "deliveryDays": 12,
+      "quantity": 1,
+      "totalPrice": 97.2
+    }
+  ]
 }

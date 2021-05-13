@@ -5,11 +5,7 @@ import ContainerStyled from "./ContainerStyled";
 import Header from "../Header";
 import Footer from "../Footer";
 
-const GlobalStyle = createGlobalStyle`
-.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
-  max-width: 500px;
-}
-`;
+const GlobalStyle = createGlobalStyle``;
 
 const LayoutDefault = ({ children }) => {
   return (

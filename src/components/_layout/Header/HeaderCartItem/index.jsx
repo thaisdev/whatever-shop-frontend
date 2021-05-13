@@ -8,7 +8,7 @@ const HeaderCartItem = ({ item }) => {
   return (
     <HeaderCartItemStyled>
       <Grid container spacing={1}>
-        <Grid item xs={3} container justify="center">
+        <Grid item xs={3} justify="center">
           <img src={imageUrl} alt={item.name} className="cart-item-image" />
         </Grid>
         <Grid item xs={6}>
