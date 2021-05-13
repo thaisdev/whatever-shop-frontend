@@ -1,5 +1,5 @@
 import React from "react";
-import LinkRouter from "react-router-dom/Link";
+import { Link as LinkRouter } from "react-router-dom";
 import { Grid, Typography, Link } from "@material-ui/core";
 import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import useAxios from "axios-hooks";

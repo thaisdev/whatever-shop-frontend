@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { Menu, IconButton, Badge } from "@material-ui/core";
+import { IconButton, Badge } from "@material-ui/core";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useAppContext } from "../../../_context/GlobalContext";
-import HeaderCartButtonStyled from "./HeaderCartButtonStyled";
 import HeaderCartMenu from "../HeaderCartMenu";
 
 const HeaderCartButton = () => {
   const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
 
   const { cartData } = useAppContext();
   const quantityCartItems =
@@ -22,7 +20,7 @@ const HeaderCartButton = () => {
   };
 
   return (
-    <HeaderCartButtonStyled>
+    <>
       <IconButton
         aria-label="Abrir carrinho"
         color="inherit"
@@ -32,23 +30,12 @@ const HeaderCartButton = () => {
           <ShoppingCartIcon />
         </Badge>
       </IconButton>
-      <Menu
+      <HeaderCartMenu
         anchorEl={anchorEl}
-        keepMounted
-        open={open}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-        transformOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-      >
-        <HeaderCartMenu handleClose={handleMenu} cartData={cartData} />
-      </Menu>
-    </HeaderCartButtonStyled>
+        handleClose={handleClose}
+        cartData={cartData}
+      />
+    </>
   );
 };
 
