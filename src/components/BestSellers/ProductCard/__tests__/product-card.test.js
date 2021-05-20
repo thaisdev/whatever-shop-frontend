@@ -30,7 +30,6 @@ const MockWithContext = () => {
 describe("renders card", () => {
   it("should be render card", () => {
     render(<MockWithContext />);
-    screen.debug();
     const card = screen.getByTestId("productCard");
     expect(card).toBeInTheDocument();
   });
