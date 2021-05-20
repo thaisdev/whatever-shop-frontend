@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import {
   Card,
   CardActionArea,
@@ -21,7 +22,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <ProductCardStyled>
-      <Card className="product-card">
+      <Card className="product-card" data-testid="productCard">
         <CardActionArea onClick={() => history.push(`product/${product.id}`)}>
           <CardMedia
             className="card-media"
@@ -49,6 +50,28 @@ const ProductCard = ({ product }) => {
       </Card>
     </ProductCardStyled>
   );
+};
+
+ProductCard.propTypes = {
+  product: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string,
+    price: PropTypes.number.isRequired,
+    description: PropTypes.string,
+    deliveryDays: PropTypes.number.isRequired,
+  }).isRequired,
+};
+
+ProductCard.defaultProps = {
+  product: {
+    id: null,
+    name: "",
+    image: "",
+    price: 0,
+    description: "",
+    deliveryDays: 0,
+  },
 };
 
 export default ProductCard;
