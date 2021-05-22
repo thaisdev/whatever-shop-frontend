@@ -2,13 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { TextField, IconButton } from "@material-ui/core";
 import { Add, Remove } from "@material-ui/icons";
 import useAxios from "axios-hooks";
-import { useAppContext } from "../_context/GlobalContext";
+import { useAppContext } from "../_context/AppContext";
 import QuantityItemCartStyled from "./QuantityItemCartStyled";
 
 const QuantityItemCart = ({ product, ...rest }) => {
   const [quantity, setQuantity] = useState(product.quantity);
   const { refetchCart, showAlertSuccess, showAlertError } = useAppContext();
-  const [{ data, loading }, updateQuantityCart] = useAxios(
+  const [, updateQuantityCart] = useAxios(
     {
       url: `/cart/${product.id}`,
       method: "PUT",

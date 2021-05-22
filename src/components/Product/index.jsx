@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Typography, Button } from "@material-ui/core";
 import useAxios from "axios-hooks";
 import { formatCurrency } from "../../utils/formatHelper";
-import { useAppContext } from "../_context/GlobalContext";
+import { useAppContext } from "../_context/AppContext";
 import QuantityItemCart from "../QuantityItemCart";
 import ProductStyled from "./ProductStyled";
 

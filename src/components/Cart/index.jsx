@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography } from "@material-ui/core";
-import { useAppContext } from "../_context/GlobalContext";
+import { useAppContext } from "../_context/AppContext";
 import CartItem from "./CartItem";
 import CartResume from "./CartResume";
 import CartStyled from "./CartStyled";

@@ -5,7 +5,7 @@ import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import useAxios from "axios-hooks";
 import { formatCurrency } from "../../../utils/formatHelper";
 import QuantityItemCart from "../../QuantityItemCart";
-import { useAppContext } from "../../_context/GlobalContext";
+import { useAppContext } from "../../_context/AppContext";
 import CartItemStyled from "./CartItemStyled";
 
 const CartItem = ({ item }) => {

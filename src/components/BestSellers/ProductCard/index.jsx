@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 import { useHistory } from "react-router";
 import { formatCurrency } from "../../../utils/formatHelper";
-import { useAppContext } from "../../_context/GlobalContext";
+import { useAppContext } from "../../_context/AppContext";
 import QuantityItemCart from "../../QuantityItemCart";
 import ProductCardStyled from "./ProductCardStyled";
 
