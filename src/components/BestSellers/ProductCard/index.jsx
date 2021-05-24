@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <ProductCardStyled>
-      <Card className="product-card" data-testid="productCard">
+      <Card className="product-card">
         <CardActionArea onClick={() => history.push(`product/${product.id}`)}>
           <CardMedia
             className="card-media"
@@ -33,7 +33,12 @@ const ProductCard = ({ product }) => {
             <Typography gutterBottom component="h2">
               {product.name}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              data-testid="productPrice"
+            >
               {formatCurrency(product.price)}
             </Typography>
           </CardContent>

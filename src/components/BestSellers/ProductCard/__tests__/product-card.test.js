@@ -1,6 +1,9 @@
-import { fireEvent } from "@testing-library/react";
+import { cleanup } from "@testing-library/react";
 import ProductCart from "../";
+import { formatCurrency } from "../../../../utils/formatHelper";
 import { renderWithAppContext } from "../../../_context/__mock-data__/app-context-mock";
+
+const IMAGES_FOLDER = "images";
 
 const productMock = {
   id: 1,
@@ -15,11 +18,25 @@ const MockProduct = (props) => (
   <ProductCart product={{ ...productMock, ...props }} />
 );
 
-describe("renders card", () => {
-  it("should be render card", () => {
+describe("renders product info", () => {
+  it("should be render card with product image", () => {
+    const { getByTitle } = renderWithAppContext(<MockProduct />);
+    const backgroundImage = getByTitle(productMock.name);
+    expect(backgroundImage).toHaveStyle(
+      `background-image: url(${IMAGES_FOLDER}/${productMock.image})`
+    );
+  });
+
+  it("should be render card with product name", () => {
+    const { getByText } = renderWithAppContext(<MockProduct />);
+    const productName = getByText(productMock.name);
+    expect(productName).toBeInTheDocument();
+  });
+
+  it("should be render card with formated price", () => {
     const { getByTestId } = renderWithAppContext(<MockProduct />);
-    const card = getByTestId("productCard");
-    expect(card).toBeInTheDocument();
+    const productPrice = getByTestId("productPrice");
+    expect(productPrice.textContent).toBe(formatCurrency(productMock.price));
   });
 });
 
@@ -35,16 +52,16 @@ describe("renders product not added in cart", () => {
 
 describe("renders product added in cart", () => {
   it("should not be render add button", () => {
-    const { getByRole } = renderWithAppContext(<MockProduct />, {
+    const { queryByRole } = renderWithAppContext(<MockProduct />, {
       contextProps: {
         cartData: [
           { ...productMock, quantity: 1, totalPrice: productMock.price },
         ],
       },
     });
-    const inputQtd = getByRole("spinbutton", {
-      value: 1,
+    const button = queryByRole("button", {
+      name: /adicionar ao carrinho/i,
     });
-    expect(inputQtd).toBeInTheDocument();
+    expect(button).not.toBeInTheDocument();
   });
 });
