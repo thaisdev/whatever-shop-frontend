@@ -1,4 +1,7 @@
+import React from "react";
+import { Router } from "react-router-dom";
 import { render } from "@testing-library/react";
+import { createMemoryHistory } from "history";
 import { ContextProvider } from "../AppContext";
 
 const mockContextProps = {
@@ -11,7 +14,13 @@ const mockContextProps = {
 
 const renderWithAppContext = (ui, { contextProps, ...options } = {}) => {
   const value = { ...mockContextProps, ...contextProps };
-  return render(<ContextProvider {...value}>{ui}</ContextProvider>, options);
+  const history = createMemoryHistory();
+  return render(
+    <Router history={history}>
+      <ContextProvider {...value}>{ui}</ContextProvider>
+    </Router>,
+    options
+  );
 };
 
 export { mockContextProps, renderWithAppContext };
