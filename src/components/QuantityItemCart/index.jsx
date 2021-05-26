@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import { TextField, IconButton } from "@material-ui/core";
 import { Add, Remove } from "@material-ui/icons";
 import useAxios from "axios-hooks";
@@ -84,6 +85,18 @@ const QuantityItemCart = ({ product, ...rest }) => {
       </IconButton>
     </QuantityItemCartStyled>
   );
+};
+
+QuantityItemCart.propTypes = {
+  product: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string,
+    price: PropTypes.number.isRequired,
+    description: PropTypes.string,
+    deliveryDays: PropTypes.number.isRequired,
+    quantity: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default QuantityItemCart;

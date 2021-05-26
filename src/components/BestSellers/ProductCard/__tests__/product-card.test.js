@@ -1,5 +1,4 @@
-import { cleanup } from "@testing-library/react";
-import ProductCart from "../";
+import ProductCart from "..";
 import { formatCurrency } from "../../../../utils/formatHelper";
 import { renderWithAppContext } from "../../../_context/__mock-data__/app-context-mock";
 
