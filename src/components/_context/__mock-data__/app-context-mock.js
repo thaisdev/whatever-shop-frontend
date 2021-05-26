@@ -12,8 +12,8 @@ const mockContextProps = {
   showAlertError: jest.fn(),
 };
 
-const renderWithAppContext = (ui, { contextProps, ...options } = {}) => {
-  const value = { ...mockContextProps, ...contextProps };
+const renderWithAppContext = (ui, { contextValue, ...options } = {}) => {
+  const value = { ...mockContextProps, ...contextValue };
   const history = createMemoryHistory();
   return render(
     <Router history={history}>
