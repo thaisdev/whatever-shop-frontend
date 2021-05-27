@@ -52,7 +52,7 @@ describe("renders product not added in cart", () => {
 describe("renders product added in cart", () => {
   it("should not be render add button", () => {
     const { queryByRole } = renderWithAppContext(<MockProduct />, {
-      contextProps: {
+      contextValue: {
         cartData: [
           { ...productMock, quantity: 1, totalPrice: productMock.price },
         ],

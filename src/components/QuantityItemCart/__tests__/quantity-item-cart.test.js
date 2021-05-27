@@ -1,14 +1,7 @@
 import { render, fireEvent } from "@testing-library/react";
 import QuantityItemCard from "..";
 import * as AppContext from "../../_context/AppContext";
-
-let mockContextProps = {
-  cartData: [],
-  addToCart: jest.fn(),
-  refetchCart: jest.fn(),
-  showAlertSuccess: jest.fn(),
-  showAlertError: jest.fn(),
-};
+import { mockContextProps } from "../../_context/__mock-data__/app-context-mock";
 
 const productMock = {
   id: 1,
